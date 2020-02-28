@@ -165,6 +165,10 @@ table td {
     font-size: 16px;
 }
 
+td:first-child {
+    width: 190px;
+}
+
 .about .container {
     padding-bottom: 200px;
     position: relative;
@@ -201,6 +205,15 @@ address {
 
 @media screen and ( max-width: 1000px) {
     /*　画面サイズが1000pxまではここを読み込む　*/
+    h2 {
+        font-size: 40px;
+    }
+
+    .main-container p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
     header {
         height: 80px;
     }
@@ -233,7 +246,15 @@ address {
 
     table td {
         height: 28px;
-        font-size: 18px;
+        font-size: 22px;
+    }
+
+    td:first-child {
+        width: 260px;
+    }
+
+    .about h5 {
+        font-size: 24px;
     }
 
     footer {
@@ -243,6 +264,7 @@ address {
     .title {
         padding-left: 20px;
         font-size: 22px;
+        font-weight: normal;
     }
 
     address {
