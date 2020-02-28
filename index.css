@@ -43,7 +43,7 @@ header {
 }
 
 .title-logo {
-    padding: 5px 0 0 10px;
+    padding: 10px 0 0 30px;
     display: inline-block;
 }
 
@@ -54,16 +54,18 @@ nav {
 
 nav ul li{
     height: 60px;
+    margin: 0 10px;
     padding: 0 15px;
     display: inline-block;
 }
 
 nav a {
+    font-size: 18px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3f3f3f;
+    color: #272727;
 }
 
 
@@ -198,8 +200,21 @@ address {
 
 
 @media screen and ( max-width: 1024px) {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    /*　画面サイズが1024pxまではここを読み込む　*/
     .policy, .theme, .about, footer {
         width: 1000px;
+    }
+
+    .about-container {
+        padding-left: 170px;
+    }
+
+    table td {
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .title {
+        padding-left: 20px;
     }
 }
