@@ -8,6 +8,7 @@
 .container {
     width: 1000px;
     margin: 0 auto;
+    min-width: 1000p
 }
 
 img {
@@ -76,6 +77,10 @@ nav a {
     text-align: center;
 }
 
+.first-view img {
+    width: 1000px;
+}
+
 .theme {
     background-color: #f5f2ee;
     position: relative;
@@ -138,7 +143,7 @@ nav a {
 }
 
 .about-container {
-    padding-left: 300px;
+    padding-left: 270px;
 }
 
 .about p {
@@ -188,4 +193,13 @@ footer {
 
 address {
     font-size: 12px;
+}
+
+
+
+@media screen and ( max-width: 500px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    .policy, .theme, .about, footer {
+        width: 1000px;
+    }
 }
