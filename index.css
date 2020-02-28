@@ -52,9 +52,8 @@ nav {
     float: right;
 }
 
-nav ul li{
+nav ul li {
     height: 60px;
-    margin: 0 10px;
     padding: 0 15px;
     display: inline-block;
 }
@@ -199,8 +198,8 @@ address {
 
 
 
-@media screen and ( max-width: 1024px) {
-    /*　画面サイズが1024pxまではここを読み込む　*/
+@media screen and ( max-width: 1000px) {
+    /*　画面サイズが1000pxまではここを読み込む　*/
     .policy, .theme, .about, footer {
         width: 1000px;
     }
@@ -211,10 +210,14 @@ address {
 
     table td {
         height: 28px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .title {
         padding-left: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
     }
 }
