@@ -197,7 +197,7 @@ address {
 
 
 
-@media screen and ( max-width: 500px) {
+@media screen and ( max-width: 1024px) {
     /*　画面サイズが768pxから1024pxまではここを読み込む　*/
     .policy, .theme, .about, footer {
         width: 1000px;
