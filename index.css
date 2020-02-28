@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "ヒラギノ丸ゴ Pro";
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #919191;
+}
+
+
+
+
+/* =====================
+  header
+===================== */
+header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 5px 0 #bebebe;
+    z-index: 100;
+}
+
+.title-logo {
+    padding: 5px 0 0 10px;
+    display: inline-block;
+}
+
+nav {
+    height: 60px;
+    float: right;
+}
+
+nav ul li{
+    height: 60px;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f3f3f;
+}
+
+
+
+
+/* =====================
+  main
+===================== */
+.main-container {
+    background-color: white;
+    text-align: center;
+}
+
+.theme {
+    background-color: #f5f2ee;
+    position: relative;
+}
+
+.theme .container {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.policy, .theme, .about {
+    padding: 120px 0;
+}
+
+.main-container h2 {
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.policy h2 {
+    color: #3d9638;
+}
+
+.theme h2 {
+    color: #f0917b;
+}
+
+.about h2 {
+    color: #71bdcd;
+}
+
+.main-container p {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 3px;
+}
+
+.town-image {
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+.rabbit, .squirrel {
+    position: absolute;
+    top: 160px;
+}
+
+.rabbit {
+    left: 180px;
+}
+
+.squirrel {
+    left: 750px;
+    top: 180px;
+}
+
+.about .container :not(h2) {
+    text-align: left;
+}
+
+.about-container {
+    padding-left: 300px;
+}
+
+.about p {
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-size: 16px;
+}
+
+.about h5 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+table td {
+    height: 28px;
+}
+
+.about .container {
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.tree {
+    position: absolute;
+    bottom: -120px;
+    right: -30px;
+}
+
+
+
+/* =====================
+  footer
+===================== */
+footer {
+    background-color: #d8d9d4;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.title, .address {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+address {
+    font-size: 12px;
+}
