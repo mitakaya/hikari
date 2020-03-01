@@ -221,12 +221,12 @@ address {
     }
 
     h2 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .main-container p {
-        font-size: 25px;
-        line-height: 50px;
+        font-size: 29px;
+        line-height: 60px;
     }
 
     header {
@@ -247,7 +247,7 @@ address {
     }
 
     nav a {
-        font-size: 28px;
+        font-size: 35px;
         height: 100%;
     }
 
@@ -256,34 +256,34 @@ address {
     }
 
     .about-container {
-        padding-left: 120px;
+        padding-left: 40px;
     }
 
     .rabbit {
-        left: 150px;
-        top: 190px;
+        left: 100px;
+        top: 250px;
     }
 
     .squirrel {
-        left: 800px;
-        top: 210px;
+        left: 850px;
+        top: 270px;
     }
 
     table td {
-        height: 45px;
-        font-size: 25px;
+        height: 60px;
+        font-size: 29px;
     }
 
     td:first-child {
-        width: 290px;
+        width: 330px;
     }
 
     .about h5 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     footer {
-        height: 240px;
+        height: 310px;
     }
 
     .title, .address {
@@ -292,7 +292,7 @@ address {
     }
 
     .title {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: normal;
     }
 
@@ -301,11 +301,11 @@ address {
     }
 
     h4 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     address {
         font-style:normal;
-        font-size: 22px;
+        font-size: 25px;
     }
 }
