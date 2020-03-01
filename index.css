@@ -28,6 +28,13 @@ a:hover {
     color: #919191;
 }
 
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
 
 
 
@@ -205,34 +212,42 @@ address {
 
 @media screen and ( max-width: 1000px) {
     /*　画面サイズが1000pxまではここを読み込む　*/
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
+
     h2 {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .main-container p {
-        font-size: 22px;
-        line-height: 40px;
+        font-size: 25px;
+        line-height: 50px;
     }
 
     header {
-        height: 80px;
+        height: 130px;
     }
 
     .title-logo {
-        padding: 20px 0 0 30px;
+        padding: 25px 0 0 30px;
     }
 
     nav {
-        height: 80px;
+        height: 130px;
     }
 
     nav ul li {
-        height: 80px;
-        margin: 0 10px;
+        height: 130px;
+        margin: 0 5px;
     }
 
     nav a {
-        font-size: 20px;
+        font-size: 28px;
         height: 100%;
     }
 
@@ -241,16 +256,26 @@ address {
     }
 
     .about-container {
-        padding-left: 170px;
+        padding-left: 120px;
+    }
+
+    .rabbit {
+        left: 150px;
+        top: 190px;
+    }
+
+    .squirrel {
+        left: 800px;
+        top: 210px;
     }
 
     table td {
-        height: 28px;
-        font-size: 22px;
+        height: 45px;
+        font-size: 25px;
     }
 
     td:first-child {
-        width: 260px;
+        width: 290px;
     }
 
     .about h5 {
@@ -258,16 +283,29 @@ address {
     }
 
     footer {
-        height: 120px;
+        height: 240px;
+    }
+
+    .title, .address {
+        display: block;
+        padding-left: 20px;
     }
 
     .title {
-        padding-left: 20px;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: normal;
     }
 
+    .address {
+        padding-top: 10px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
     address {
-        font-size: 18px;
+        font-style:normal;
+        font-size: 22px;
     }
 }
