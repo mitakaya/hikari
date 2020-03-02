@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "GENJ";
+    src: url("../fonts/genjyuufothic.woff") format("woff");
+}
+
+/* @font-face {
+    font-family: "GenshinGothicNormal"; //任意の名前を設定
+    font-style: "normal"; //フォントスタイルの設定
+    font-weight: 400; //フォントウェイトの設定
+    src: url("/fonts/GenShinGothic-Medium.woff2") format("woff2"),
+    url("/fonts/GenShinGothic-Medium.woff") format("woff"); //フォントファイルの指定
+} */
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "ヒラギノ丸ゴ Pro";
+    font-family: "GENJ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  "メイリオ", Meiryo, "ＭＳ Ｐゴシック", 'Open Sans', osaka, Arial, Verdana, sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -9,7 +22,6 @@
 .container {
     width: 1000px;
     margin: 0 auto;
-    min-width: 1000p
 }
 
 img {
@@ -36,6 +48,12 @@ a:hover {
     display: none !important;
 }
 
+.clearfix:after {
+    content: "";         /* 擬似要素を実体化 */
+    clear: both;        /* floatを解除する */
+    display: block;     /* ブロック要素にする */
+}
+
 
 
 /* =====================
@@ -46,7 +64,9 @@ header {
     height: 60px;
     width: 100%;
     background-color: white;
-    box-shadow: 0 1px 5px 0 #bebebe;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
@@ -55,7 +75,7 @@ header {
     display: inline-block;
 }
 
-nav {
+#nav {
     height: 60px;
     float: right;
 }
@@ -73,6 +93,10 @@ nav a {
     align-items: center;
     justify-content: center;
     color: #272727;
+}
+
+.sp-menu {
+    display: none;
 }
 
 
@@ -125,6 +149,11 @@ nav a {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 3px;
+}
+
+.policy p,
+.theme p {
+    font-size: 20px;
 }
 
 .town-image {
@@ -184,7 +213,6 @@ td:first-child {
 .tree {
     position: absolute;
     bottom: -120px;
-    right: 0px;
 }
 
 
@@ -221,78 +249,210 @@ address {
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 22px;
     }
 
-    .main-container p {
-        font-size: 29px;
-        line-height: 60px;
+    .policy, .theme, .about {
+        padding: 30px 0 80px 0;
+    }
+
+    .policy h2,
+    .theme h2,
+    .about h2 {
+        color: white;
+        background-color: rgb(177, 136, 136);
+        border-radius: 5px;
+        padding: 5px 0 5px 20px;
+        margin-bottom: 20px;
+    }
+
+    p, table, h5 {
+        color: #474642;
+    }
+
+    .container:not(.first-view){
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        text-align: left;
+    }
+
+    .main-container p, table td, a{
+       font-size: 14px;
+       line-height: 22px;
+       letter-spacing: 2px;
     }
 
     header {
-        height: 130px;
+        height: 70px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     }
 
-    .title-logo {
-        padding: 25px 0 0 30px;
-    }
-
-    nav {
-        height: 130px;
-    }
-
-    nav ul li {
-        height: 130px;
-        margin: 0 5px;
-    }
-
-    nav a {
-        font-size: 35px;
+    header .container {
         height: 100%;
     }
 
+    .title-logo {
+        padding: 15px 0;
+        height: 40px;
+    }
+
+    .title-logo img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .nav-background.open {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 200;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background:rgba(212, 203, 203);
+        box-sizing: border-box;
+        z-index: 300;
+    }
+
+    .sp-menu {
+        display: block;
+        float: right;
+        font-size: 40px;
+        color: #4b4b4b;
+        z-index: 400;
+    }
+
+    .sp-menu-bars {
+        height: 100%;
+    }
+
+    .sp-menu .fa-bars {
+        padding-right: 10px;
+        line-height: 70px;
+    }
+
+    .sp-menu-times {
+        display: block;
+        padding-right: 20px;
+        font-size: 50px;
+        color: #4b4b4b;
+        z-index: 400;
+    }
+
+    nav {
+        clear: both;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav ul li {
+        height: 50px;
+        margin: 0 5px;
+        display: block;
+        border-bottom: dashed 0.5px rgb(177, 136, 136);
+    }
+
+    nav ul li:first-child {
+        border-top: dashed 0.5px rgb(177, 136, 136);
+    }
+
+    nav a {
+        height: 100%;
+    }
+
+    .first-view {
+        padding-top: 70px;
+        width: 100%;
+    }
+
+    .first-view img {
+        width: 100%;
+        max-width:100%;
+        max-height:100%;
+    }
+
     .policy, .theme, .about, footer {
-        width: 1000px;
+        width: 100%;
     }
 
     .about-container {
-        padding-left: 40px;
+        padding-left: 0;
     }
 
-    .rabbit {
-        left: 100px;
-        top: 250px;
+    .about .container {
+        padding-bottom: 50px;
     }
 
-    .squirrel {
-        left: 850px;
-        top: 270px;
+    .baby {
+        width: 40%;
+        padding: 0 10px;
+        float: right;
+        border-radius: 15px / 5px;
     }
 
-    table td {
-        height: 60px;
-        font-size: 29px;
+    .text-container {
+        padding-left: 10px;
+    }
+
+    .theme h2{
+        margin-bottom: 40px;
+    }
+
+    .theme p {
+        text-align: center;
+    }
+
+    .theme {
+        padding-bottom: 20px;
     }
 
     td:first-child {
-        width: 330px;
+        width: 37%;
+        min-width: 120px;
+    }
+
+    table td {
+        letter-spacing: normal;
+    }
+
+    .tree {
+        right: -4%;
     }
 
     .about h5 {
-        font-size: 32px;
+        font-size: 16px;
+    }
+
+    .about p {
+        letter-spacing: normal;
     }
 
     footer {
-        height: 310px;
+        height: 150px;
+        padding-top: 10px;
+        background-color: rgba(212, 203, 203);
     }
 
     .title, .address {
         display: block;
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .title {
-        font-size: 30px;
+        font-size: 13px;
         font-weight: normal;
     }
 
@@ -301,11 +461,12 @@ address {
     }
 
     h4 {
-        font-size: 35px;
+        font-size: 16px;
+        font-weight: normal;
     }
 
     address {
         font-style:normal;
-        font-size: 25px;
+        font-size: 12px;
     }
 }
